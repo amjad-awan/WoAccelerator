@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Herr+Von+Muellerhoff&family=Nunito:wght@200;300;400;600;700&family=Open+Sans:wght@300;400;500;700&family=Quicksand:wght@300;400;600&family=Roboto:wght@300;400&family=Source+Sans+Pro:wght@400;900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+font-style: normal;
+}
+
+body
+{
+    background-color: #F8F8F8;
+}
+
+h2,
+p,
+a{
+    color: #F8F8F8;
+}
+p
+{
+    letter-spacing: 1px;
+}
+.hero-section
+{
+    width: 100%;
+    min-height: 100vh;
+    max-height: auto;
+    background-image: url("img/image\ 12.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+      text-align: center;
+}
+
+.logo
+{
+    position: absolute;
+    top:20px;
+    left:15%;
+}
+.hero-info
+{
+    width: 991px;
+    max-width: 95%;
+
+
+}
+.hero-info p:first-child
+{
+
+font-weight: 300;
+font-size: 20px;
+//line-height: 68px;
+width: 460px;
+max-width: 100%;
+text-align: center;
+margin: auto;
+}
+.hero-info h2
+{
+    font-weight: bold;
+font-size: 40px;
+color: #FFFFFF;
+margin-bottom: 20px;
+
+}
+.hero-info h2 span
+{
+    color: #2B79BD;
+}
+.hero-info p:nth-of-type(2)
+{
+font-size: 16px;
+letter-spacing: 1px;
+}
+
+.hero-info a
+{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background: #2B79BD;
+    padding: 15px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1.5px solid #2B79BD;
+    transition:all .1s linear;
+
+}
+.hero-info a:hover
+{
+    background: transparent;
+    letter-spacing: 1px;
+}
+
+/*------------ here section completed ----------------*/
+
+.commitment
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 40px 0px;
+    padding: 0px 20px;
+}
+
+.commitment p, h2
+{
+ color: black;
+}
+
+/*-------------- main card section --------------*/
+
+.main-card-section
+{
+    padding: 30px 20px;
+}
+.main-card-section h3
+{
+    color: #CB1717;
+    text-align: center;
+}
+
+.main-card-section h3 span img
+{
+    width: 15px;
+    height: 10px;
+    object-fit: cover;
+}
+
+
+.main-card-section .card-wrapper
+{
+  margin-top: 30px;
+}
+
+
+.card-wrapper .card-links
+{
+    display: flex;
+    justify-content: center;
+    gap: 0px 30px;
+
+}
+
+.card-wrapper div:first-child a
+{
+color:#0C0A0E;
+text-decoration: none;
+}
+
+.card-wrapper .card-links .active
+{
+    color: #2B79BD;
+    text-decoration: underline;
+}
+.cards
+{
+    display: flex;
+    justify-content: center;
+   //align-items: center;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 0px 5%;
+    margin-top: 30px;
+}
+.cards .card
+{
+    flex: 1 1 20rem;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.cards .card .img
+{
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+.cards .card .img::after
+{
+
+    position: absolute;
+    content: "";
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+    background: rgb(0, 0, 0);
+    opacity: .3;
+
+}
+.cards .card img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s linear;
+}
+
+.cards .card .img:hover img
+{
+    transform: scale(1.1);
+}
+.cards .card p
+{
+    color: #8A8A8A;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+.cards .card .img p
+{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 111;
+
+}
+.cards .card .inner-info
+{
+    padding: 20px 20px 0px 20px;
+}
+
+.cards .card .inner-info h4
+{
+    font-size: 17px;
+    //margin: 0px 30px 20px 0px;
+
+}
+.cards .card .progress
+{
+    margin-top: 20px;
+}
+
+
+.cards .card .progress span
+{
+    color:#2B79BD;
+
+}
+
+.cards .card .progress-tab
+{
+    width: 80%;
+    background-color: #EBEBEB;
+    position: relative;
+    height: 10px;
+    margin-top: 15px;
+}
+.cards .card:first-child .progress-tab::after
+{
+    position: absolute;
+    content: "";
+    left:0;
+    top:0;
+    width: 75%;
+    height: 100%;
+    background-color: #2B79BD;
+
+}
+
+.card-bottom-links
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+}
+.card-bottom-links a
+{
+    color: #2B79BD !important;
+    text-decoration: none;
+    font-size: 17px;
+    transition: opacity .3s linear;
+
+}
+.card-bottom-links a:hover
+{
+    opacity: .5;
+}
+.card-bottom-links a i
+{
+    margin-right: 15px;
+}
+
+.instructor-profile
+{
+    border-top: 1px solid #EDEDED;
+    margin-top: 15px;
+    display: flex;
+    gap: 0px 20px;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.instructor-profile img
+{
+   max-width: 70px;
+   max-height: 70px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.instructor-profile .details span
+{
+    display:block;
+    line-height: 25px;
+}
+
+.instructor-profile .details .name
+{
+   color:#8A8A8A;
+}
+
+
+
+/*-------------- main card section completed--------------*/
+
+.QAs
+{
+    padding: 30px 20px;
+}
+
+.QAs-wrapper
+{
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.QAs-wrapper .support
+{
+    margin-bottom: 20px;
+}
+.QAs-wrapper .support a
+{
+    color: #2B79BD;
+    text-decoration: none;
+}
+
+.QAs-wrapper .support h4
+{
+    margin-top: 10px;
+}
+.QAs-wrapper .card
+{
+   flex: 1 1 30rem;
+   padding: 0 5%;
+}
+.QAs-wrapper .card .questions
+{
+    position: relative;
+    margin: 30px 0px;
+}
+
+.QAs-wrapper .card .questions span
+{
+    position: absolute;
+    right:0;
+    top:0px;
+    border: 1.5px solid #808080;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.QAs-wrapper .card .questions span i
+{
+    height: 15px;
+    width: 15px;
+display:flex;
+      justify-content: center;
+    align-items: center;
+    color: #808080;
+
+    font-size: 10px;
+}
+.QAs-wrapper .card .questions h4
+{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.QAs-wrapper .card p
+{
+    color: #0C0A0E;
+}
+
+.QAs-wrapper .card .answer
+{
+    padding: 20px 30px 30px 0px;
+display: none;
+}
+
+footer
+{
+    padding: 15px 5%;
+    background-color: #162633;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+footer .footer-links
+{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+footer .footer-links a{
+    margin-left: 30px;
+    font-weight: 300;
+}
+
+@media only screen and (max-width:768px) {
+
+    .hero-info h2
+    {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .main-card-section h3
+    {
+        font-size: 15px;
+    }
+}
